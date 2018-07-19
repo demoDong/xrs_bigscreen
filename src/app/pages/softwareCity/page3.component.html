@@ -1,0 +1,73 @@
+<do-frame [(meunTitle)]="meunTitle">
+  <div class="container-fluid row content">
+    <div class="row judgeBottom">
+      <!-- 左侧整体 -->
+      <div class="left">
+        <div class="mapList">
+          <h3 class="echartstitle">软著数量占全国比例</h3>
+          <do-echarts class="echartsMy" [options]="leftTopOption"></do-echarts>
+        </div>
+        <div class="mapList">
+          <h3 class="echartstitle">名城产值占总体产值百分比</h3>
+          <do-echarts class="echartsMy" [options]="leftMiddleOption" [theme]="theme"></do-echarts>
+        </div>
+        <div class="mapList">
+          <h3 class="echartstitle">名城从业人数占比</h3>
+          <do-echarts class="echartsMy" [options]="leftBottomOption" [theme]="theme"></do-echarts>
+        </div>
+      </div>
+      <!-- 中间整体 -->
+      <div class="middle">
+        <div class="mapShow">
+          <do-echarts class="middleEcharts" [options]="middleOption" [theme]="theme" [nameMap]="nameMap" (chartClick)='middleMapClick($event,softwarePark)'
+            (chartTimelinechanged)='middleMapChange($event)'></do-echarts>
+          <!-- <button type="text" pButton label="Basic" (click)="softwarePark.toggle($event)"></button> -->
+          <!-- <p-overlayPanel #softwarePark> -->
+
+          <!-- </p-overlayPanel> -->
+        </div>
+        <!-- 右侧分类按钮 -->
+        <div class="typeBtn">
+          <div *ngFor="let item of typeBtnNum;let i = index" [ngClass]="{'active':activeArr[i]}" (click)='typeBtnClick(i)'>
+            <!-- <span>{{item}}</span> -->
+          </div>
+        </div>
+
+
+
+        <!-- 弹出框 -->
+        <div class="joinShow" *ngIf="joinShow">
+          <span class="joinShowBtn" (click)="joinShowBtn()"></span>
+          <h3 class="joinTitle">{{messageData[2]}}</h3>
+          <img src="assets/images/{{messageData[3]}}.png" alt="Galleria 1" />
+          <h3>园区规模：</h3>
+          <div>
+            <span> {{ifshow4 ? messageData[4] : "暂无数据"}}</span>
+            <span *ngIf="ifshow4">亿元</span>
+          </div>
+          <h3>园区企业数量：</h3>
+          <div>
+            <span>{{ifshow5 ? messageData[5] : "暂无数据"}}</span>
+            <span *ngIf="ifshow5">家</span>
+          </div>
+          <h3>龙头企业：</h3>
+          <div *ngIf="ifshow6">{{ifshow6 ? messageData[6] : "暂无数据"}}</div>
+
+          <!-- <ul class="eventList">
+            <li *ngFor="let item of joinShowData" class="eventLi">
+              <span class="eventTime">
+                <em class="eventDay">{{item.day}}</em>
+                <i class="eventYear">{{item.year}}</i>
+              </span>
+              <p class="eventTitle">{{item.title}}</p>
+              <p class="eventContent">{{item.content}}</p>
+            </li>
+          </ul> -->
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</do-frame>

@@ -1,0 +1,8 @@
+<do-frame [(meunTitle)]="meunTitle" [(ifshowmeun)]="ifshowmeun">
+    <div class="btnlist">
+        <button *ngFor="let item of items" (click)="btnClicked($event,item.routerLink)">
+            <div class="nav_label">{{item.label}}</div>
+        </button>
+    </div>
+
+</do-frame>

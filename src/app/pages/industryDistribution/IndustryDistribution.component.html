@@ -1,0 +1,175 @@
+<do-frame [(meunTitle)]="meunTitle">
+    <div class="container-fluid row content">
+        <div class="row judgeBottom">
+            <div class="left">
+                <div class="mapList">
+                    <h3 class="echartstitle">软件行业产值Top10（亿元）</h3>
+                    <do-echarts class="echartsMy" [options]="contrastAnalyseBarOption" [theme]="theme"></do-echarts>
+                    <p class="lookBtn" (click)="barShowClick()">查看详细数据</p>
+                </div>
+                <div class="mapList">
+                    <h3 class="echartstitle">2018年1-4月软件行业分区域收入情况</h3>
+                    <do-echarts class="echartsMy" [options]="companyAnalyseBarOption" [theme]="theme"></do-echarts>
+                    <p class="lookBtn" (click)="scatterShowClick()">查看详细数据</p>
+                </div>
+            </div>
+            <div class="middle">
+                <!-- 柱状图 放大 -->
+                <div class="barShow" *ngIf="barShow">
+                    <div class="barChoose">
+                        <div class="chooseClass sortBox">
+                            <!-- <p-dropdown [options]="sortAll" [(ngModel)]="sortModel" (onChange)="sortChange(sortModel)"></p-dropdown> -->
+                        </div>
+                        <div class="chooseClass moneyBox">
+                            <!-- <p-dropdown [options]="moneyAll" [(ngModel)]="moneyModel" (onChange)="moneyChange(moneyModel)"></p-dropdown> -->
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">产业收入</span>
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">利润收入</span>
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">税收</span>
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">工资总额</span>
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">研发经费</span>
+                        </div>
+                        <div class="chooseClass">
+                            <span class="checkboxBtn"></span>
+                            <span class="checkboxText">出口金额</span>
+                        </div>
+                    </div>
+                    <do-echarts class="echartsMy middleEcharts" [options]="leftTopMapOption" [theme]="theme"></do-echarts>
+                </div>
+                <!-- 气泡图 放大 -->
+                <div class="scatterShow" *ngIf="scatterShow">
+                    <do-echarts class="echartsMy middleEcharts" [options]="leftTopMapOption" [theme]="theme"></do-echarts>
+                </div>
+                <!-- map 地图 -->
+                <div class="mapShow" *ngIf="mapShow">
+                    <div class="checkboxList">
+                        <p class="totalValue line">
+                            <span class="checkboxBtn" [ngClass]="{'trueIcon': trueIcon[1]}" (click)="checkboxClick(1)"></span>
+                            <span class="checkboxText" (click)="checkboxClick(1)">总产值</span>
+                        </p>
+                        <div class="radioList">
+                            <p class="totalRadio line">
+                                <span class="radioBtn" (click)="radioClick(0)">
+                                    <i class="radioSelect" [ngClass]="{'radioShow':sel[0]}"></i>
+                                </span>
+                                <span class="radioText" (click)="radioClick(0)">软件产品</span>
+                            </p>
+                            <p class="totalRadio line">
+                                <span class="radioBtn" (click)="radioClick(1)">
+                                    <i class="radioSelect" [ngClass]="{'radioShow':sel[1]}"></i>
+                                </span>
+                                <span class="radioText" (click)="radioClick(1)">信息技术服务</span>
+                            </p>
+                            <p class="totalRadio line">
+                                <span class="radioBtn" (click)="radioClick(2)">
+                                    <i class="radioSelect" [ngClass]="{'radioShow':sel[2]}"></i>
+                                </span>
+                                <span class="radioText" (click)="radioClick(2)">嵌入式系统软件</span>
+                            </p>
+                        </div>
+                        <p class="companyNumder line">
+                            <span class="checkboxBtn" [ngClass]="{'trueIcon': trueIcon[2]}" (click)="checkboxClick(2)"></span>
+                            <span class="checkboxText" (click)="checkboxClick(2)">企业数量</span>
+                        </p>
+                        <p class="company100 line">
+                            <span class="checkboxBtn" [ngClass]="{'trueIcon': trueIcon[3]}" (click)="checkboxClick(3)"></span>
+                            <span class="checkboxText" (click)="checkboxClick(3)">百强企业</span>
+                        </p>
+                        <p class="regionLayout line">
+                            <span class="checkboxBtn" [ngClass]="{'trueIcon': trueIcon[4]}" (click)="checkboxClick(4)"></span>
+                            <span class="checkboxText" (click)="checkboxClick(4)">区域布局</span>
+                        </p>
+                        <div class="radioList">
+                            <p class="regionRadio line">
+                                <span class="checkboxBtn" [ngClass]="{'trueIcon':regionChecked[1]}" (click)="regionCheckbox(1)"></span>
+                                <span class="radioText" (click)="regionCheckbox(1)">软件名城</span>
+                            </p>
+                            <p class="regionRadio line">
+                                <span class="checkboxBtn" [ngClass]="{'trueIcon':regionChecked[2]}" (click)="regionCheckbox(2)"></span>
+                                <span class="radioText" (click)="regionCheckbox(2)">国家新型工业示范基地</span>
+                            </p>
+                            <p class="regionRadio line">
+                                <span class="checkboxBtn" [ngClass]="{'trueIcon':regionChecked[3]}" (click)="regionCheckbox(3)"></span>
+                                <span class="radioText" (click)="regionCheckbox(3)">软件园区</span>
+                            </p>
+                            <p class="regionRadio line">
+                                <span class="checkboxBtn" [ngClass]="{'trueIcon':regionChecked[4]}" (click)="regionCheckbox(4)"></span>
+                                <span class="radioText" (click)="regionCheckbox(4)">国家大数据综合试验区</span>
+                            </p>
+                            <p class="regionRadio line">
+                                <span class="checkboxBtn" [ngClass]="{'trueIcon':regionChecked[5]}" (click)="regionCheckbox(5)"></span>
+                                <span class="radioText" (click)="regionCheckbox(5)">信息消费示范城市</span>
+                            </p>
+                        </div>
+                    </div>
+                    <do-echarts class="middleEcharts" [options]="middleChinaAllOption" [theme]="theme" [nameMap]="nameMap"></do-echarts>
+                    <div class="legend">产值：亿元</div>
+
+                            <!-- 弹出框 -->
+        <div class="joinShow" *ngIf="joinShow">
+            <span class="joinShowBtn" (click)="joinShowBtn()"></span>
+            <h3 class="joinTitle">{{messageData[2]}}</h3>
+            <img src="assets/images/{{messageData[3]}}.png" alt="Galleria 1" />
+            <h3>园区规模：</h3>
+            <div>
+              <span> {{ifshow4 ? messageData[4] : "暂无数据"}}</span>
+              <span *ngIf="ifshow4">亿元</span>
+            </div>
+            <h3>园区企业数量：</h3>
+            <div>
+              <span>{{ifshow5 ? messageData[5] : "暂无数据"}}</span>
+              <span *ngIf="ifshow5">家</span>
+            </div>
+            <h3>龙头企业：</h3>
+            <div *ngIf="ifshow6">{{ifshow6 ? messageData[6] : "暂无数据"}}</div>
+  
+            <!-- <ul class="eventList">
+              <li *ngFor="let item of joinShowData" class="eventLi">
+                <span class="eventTime">
+                  <em class="eventDay">{{item.day}}</em>
+                  <i class="eventYear">{{item.year}}</i>
+                </span>
+                <p class="eventTitle">{{item.title}}</p>
+                <p class="eventContent">{{item.content}}</p>
+              </li>
+            </ul> -->
+          </div>
+                </div>
+            </div>
+            <!-- <div class="right">
+                <div class="mapList">
+                    <h3 class="echartstitle">软件行业景气指数及预测</h3>
+                    <do-echarts class="echartsMy" [options]="rightListOption1" [theme]="theme"></do-echarts>
+                </div>
+                <div class="mapList">
+                    <h3 class="echartstitle">全国软件行业增长趋势</h3>
+                    <do-echarts class="echartsMy" [options]="rightListOption2" [theme]="theme"></do-echarts>
+                </div>
+                <div class="mapList">
+                    <h3 class="echartstitle">增长速度排名前五的省份</h3>
+                    <do-echarts class="echartsMy" [options]="rightListOption3" [theme]="theme"></do-echarts>
+                </div>
+                <div class="mapList">
+                    <do-echarts class="echartsMy" [options]="rightListOption4" [theme]="theme"></do-echarts>
+                </div>
+                <div class="mapList">
+                    <do-echarts class="echartsMy" [options]="rightListOption5" [theme]="theme"></do-echarts>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</do-frame>

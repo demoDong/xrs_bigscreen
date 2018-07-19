@@ -1,0 +1,378 @@
+.skyBlue{
+    color: #00ffff;
+    font-family: Transistor
+}
+.number{
+    color: #00ffff;
+    font-family: Transistor;
+    font-size: 24px;
+}
+.text{
+    font-size: 18px;
+    color: #ffffff;
+}
+.unit{
+    font-size: 12px;
+    color: #ffffff;
+}
+.content{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 87.4vh;
+    color: #ffffff;
+    .judgeTop{
+        // margin: 1vh 0;
+        // width: 100%;
+        // height: 14vh;
+        // .judgeBox{
+        //     float: left;
+        //     width: 16vw;
+        //     height: 100%;
+        // }
+        // .judgeBox:nth-of-type(2),.judgeBox:nth-of-type(3),.judgeBox:nth-of-type(4){
+        //     margin: 0 3vw;
+        // }
+        // .describe{
+        //     // margin: 0 2vh;
+        //     padding: 0 3vh;
+        //     height: 100%;
+        //     background: url('../../../assets/images/districtTopborder.png') no-repeat;
+        //     background-size: 100% 100%;
+        //     color: #ffffff;
+        //     position: relative;
+        //     .districtShare{
+        //         position: absolute;
+        //         top: 0;
+        //         right: 0;
+        //         display: block;
+        //         width: 21px;
+        //         height:21px;
+        //         background: url('../../../assets/images/districtShare.png') no-repeat;
+        //         background-size: 100% 100%;
+        //     }
+        //     .line{
+        //         margin: 0.5vh 0;
+        //         width: 100%;
+        //         float: left;
+        //         line-height: 3vh;
+        //         text-align: center;
+        //     }
+        //     .judgeTiele{
+        //         font-size: 22px;
+        //         // color: #ffffff;
+        //     }
+        //     .judgeNumber{
+        //         font-size: 28px;
+        //         color: #00ffff;
+        //         font-family: Transistor
+        //     }
+        //     .caseNumber{
+        //         margin: 0 0.2vw;
+        //         font-size: 28px;
+        //         color: orange;
+        //         font-family: Transistor;
+        //     }
+        //     .judgeUnit{
+        //         font-size: 14px;
+        //     }
+        //     .judgeText{
+        //         font-size: 18px;
+        //     }
+        // }
+    }
+    .judgeBottom{
+        margin: 0 auto;
+        width: 100%;
+        height: 81vh;
+        // border: 1px solid red;
+        .left{
+            float: left;
+            width: 21vw;
+            height: 100%;
+            // border: 1px solid red;
+            background: url("../../../assets/images/rightBox.png") no-repeat;
+            background-size: 100% 100%;
+            .mapList{
+                float: left;
+                width: 96%;
+                height: 37.7vh;
+                // margin-bottom: 2vh;
+                // background: url('../../../assets/images/districtLeftBorder.png') no-repeat;
+                // background-size: 100% 100%;
+            }
+            .mapList:nth-of-type(2){
+                margin: 2vh 0;
+            }
+            .echartsMy{
+                margin: 0 auto;
+                width: 19vw;
+                height: 18.4vh;
+            }
+            .lookBtn{
+                margin: 1vh auto 0 ;
+                width: 6vw;
+                line-height: 2.4vh;
+                font-size: 14px;
+                text-align: center;
+                border: 1px solid #00ffff;
+                border-radius: 0.7vh;
+            }
+        }
+        .middle{
+            float: left;
+            width: 76vw;
+            height: 100%;
+            // border: 1px solid red;
+            margin: 0 0 0 1vw;
+            .barShow,.scatterShow,.mapShow{
+                width: 100%;
+                height: 100%;
+            }
+            .barShow{
+                .chooseClass{
+                    float: left;
+                    margin: 0 1.24vw;
+                    width: 7vw;
+                    height: 6vh;
+                    border: 1px solid yellow;
+                }
+                .middleEcharts{
+                    width: 76vw;
+                    height: 81vh;
+                }
+            }
+            .mapShow{
+                position: relative;
+                background: url('../../../assets/images/chinamap.png') no-repeat;
+                background-size: 71% 90%;
+                background-position: 17% 58%;
+                //  background-position: 54% 58%;
+            }
+            .checkboxList{
+                position: absolute;
+                right: 1vw;
+                top: 27vh;
+                z-index: 99;
+                width: 12vw;
+                overflow: hidden;
+                .line{
+                    margin: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    // font-size: 20px;
+                   
+                }
+                .checkboxBtn{
+                    float: left;
+                    display: inline-block;
+                    margin-top: 1.1vh;
+                    margin-left: 6px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid;
+                    border-radius: 6px;
+                }
+                .trueIcon{
+                    background-image: url('../../../assets/images/img_true.png')!important;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+                .checkboxText{
+                    float: left;
+                    display: inline-block;
+                    margin: 0 2px;
+                    font-size: 20px;
+                    line-height: 3.6vh;
+                   
+                }
+                .radioList{
+                    padding-left: 2vh;
+                    .totalRadio{
+                        .radioBtn{
+                            border-color: #90ffff;
+                            background-color: rgba(144, 255, 255, 0.3);
+                        }
+                        .radioSelect{
+                            // display: none;
+                            background-color: #90ffff;
+                        }
+                    }
+                    .totalRadio{
+                        .radioSelect{
+                            display: none;
+                        }
+                        .radioShow{
+                            display: block;
+                        }
+                    }
+                    .regionRadio:nth-of-type(1) {
+                        .checkboxBtn{
+                            border-color: #41e00e;
+                            background-color: rgba(65, 224, 14, 0.3);
+                        }
+                        .radioSelect{
+                            background-color: #41e00e;
+                        }
+                    }
+                    .regionRadio:nth-of-type(2){
+                        .checkboxBtn{
+                            border-color: #ffb102;
+                            background-color: rgba(255, 177, 2, 0.3);
+                        }
+                        .radioSelect{
+                            background-color: #ffb102;
+                        }
+                    }
+                    .regionRadio:nth-of-type(3){
+                        .checkboxBtn{
+                            border-color: #f16f0c;
+                            background-color: rgba(241, 111, 12, 0.3);
+                        }
+                        .radioSelect{
+                            background-color: #f16f0c;
+                        }
+                    }
+                    .regionRadio:nth-of-type(4) {
+                        .checkboxBtn{
+                            border-color: #734cf6;
+                            background-color: rgba(115, 76, 246, 0.3)
+                        }
+                        .radioSelect{
+                            background-color: #734cf6;
+                        }
+                    }
+                    .regionRadio{
+                        .radioShow{
+                            background-image: url('../../../assets/images/img_true.png') no-repeat;
+                            background-size: 100% 100%;
+                        }
+                    }
+                    .line:nth-of-type(5){
+                        .checkboxBtn{
+                            border-color: #162cec;
+                            background-color: rgba(22, 44, 236, 0.3);
+                        }
+                        .radioSelect{
+                            background-color: #162cec;
+                        }
+                    }
+                }
+                .radioBtn{
+                    float: left;
+                    display: block;
+                    margin-top: 0.6vh;
+                    margin-left: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    .radioSelect{
+                        display: block;
+                        margin: 4px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                    }
+                }
+                .radioText{
+                    float: left;
+                    display: inline-block;
+                    margin: 0 2px;
+                    font-size: 16px;
+                    line-height: 3vh;
+                }
+                .totalValue {
+                    .checkboxBtn{
+                        border-color: #90ffff;
+                        background-color: rgba(144, 255, 255, 0.3);
+                    }
+                    .checkboxText{
+                        color: #90ffff;
+                    }
+                }
+                .companyNumder,.company100, .regionLayout,.regionLayout{
+                    // .checkboxBtn{
+                        .trueIcon{
+                            background-image: url('../../../assets/images/img_true.png');
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                        }
+                    // }
+                }
+                
+                .companyNumder{
+                    .checkboxBtn{
+                        border-color: #e4e81f;
+                        background-color: rgba(228, 232, 31, 0.3);
+                    }
+                    .checkboxText{
+                        color: #e4e81f;
+                    }
+                }
+                .company100{
+                    .checkboxBtn{
+                        border-color: #cc66f7;
+                        background-color: rgba(204, 102, 247, 0.3);
+                    }
+                    .checkboxText{
+                        color: #cc66f7;
+                    }
+                }
+                .regionLayout{
+                    .checkboxBtn{
+                        border-color: #eb3a1b;
+                        background-color: rgba(235, 58, 27, 0.3);
+                    }
+                    .checkboxText{
+                        color: #eb3a1b;
+                    }
+                }
+            }
+            /deep/ .ui-galleria-caption{
+                display: none!important;
+            }
+            /deep/ .ui-galleria-panel{
+                img{
+                    width: 100%;
+                }
+            }
+            .legend{
+                position: absolute;
+                bottom: 16vh;
+                left: 6.4vw;
+                width: 6vw;
+                height: 3vh;
+                line-height: 3vh;
+                color: #00ffff;
+                font-size: 18px;
+            }
+        }
+        .right{
+            float: right;
+            width: 21vw;
+            height: 100%;
+            overflow-y: scroll;
+            background: url("../../../assets/images/districtRightBorder.png") no-repeat;
+            background-size: 100% 100%;
+            .mapList{
+                    /* float: left; */
+                width: 100%;
+                height: 22vh;
+                // border: 1px solid #ff0;
+                margin: 1vh auto 2vh;
+                padding: 1vh 0;
+            }
+            .echartsMy{
+                margin: 0 auto;
+                width: 19vw;
+                height: 17vh;
+            }
+        }
+        .echartstitle{
+            margin: 0 auto;
+            line-height: 4vh;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}

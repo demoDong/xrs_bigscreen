@@ -1,0 +1,367 @@
+.skyBlue{
+    color: #00ffff;
+    font-family: Transistor
+}
+.number{
+    font-family: -webkit-pictograph;
+    letter-spacing: 3px;
+    color: #16eef1;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text{
+    font-size: 12px;
+    color: #ffffff;
+    font-family: MicrosoftYaHei-Bold
+}
+.btn-position {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.unit{
+    font-size: 12px;
+    color: #ffffff;
+}
+.content{
+    padding: 15px 0px;
+    height: 87vh;
+    display: flex;
+   font-family: "微软雅黑";
+    .v-page-message{
+        width:99%;
+        margin: 0px !important;
+    }
+    button.v-expendarrow {
+        align-self: center;
+        background: url("../../../assets/images/expendArrow.png") no-repeat;
+        background-size: 100% 100%;
+        width: 1%;
+        height: 30%;
+        border: none;
+        float: left;
+        cursor: pointer;
+    }
+    .arrowRotate{
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); /* Internet Explorer */
+        -moz-transform:rotate(180deg); /* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    }
+    .h-left-box{
+        height: 100%;
+        padding: 0px;
+        .v-datalistbox{//四项优势
+            margin: 0px 0 2vh -1vw;
+            .col-sm-2{
+                .topBox{
+                    margin: 0px 0.5vw;
+                    background: url("../../../assets/images/districtTopborder.png") no-repeat;
+                    height: 15vh;
+                    background-size: 100% 100%;
+                    padding: 0px 0.5vw;
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    .topTitle{
+                        margin-bottom: 10px;    
+                        padding-top: 10px;
+                        color: #fff;
+                        font-size: 22px;
+                        line-height: 4vh;
+                        margin: 0px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .describe{
+                        margin-top: 0.6vh;
+                        .year{
+                            margin-right: 0.2vw;
+                        }
+                        span{
+                            display: inline-block;
+                        }
+                        .line{
+                            margin-bottom: 0;
+                            width: 100%;
+                            text-align: center;
+                            line-height: 3vh;
+                            .text{
+                                line-height: 4vh;
+                            }
+                        }
+                    }
+                }
+                .topBox.ligheheighBg{
+                    background: url("../../../assets/images/lightHeightBG.png") no-repeat;
+                    background-size: 100% 100%;
+                }
+                .topBox button{
+                    background: url('../../../assets/images/detailchartsBtn.png') no-repeat;
+                    background-size: 100% 100%;
+                    height: 2vh;
+                    position: absolute;
+                    right: 1.6vw;
+                    width: 1.2vw;
+                    top: 2px;
+                    border: none;
+                    z-index: 10;
+                    cursor: pointer;
+                }
+            }
+        }
+        .v-mapbox {
+            padding-right: 1vw;
+            width: auto;
+            height: 66vh;
+            position: relative;
+            .joinShow{//中日韩合作
+                width: 13vw;
+                height: 45vh;
+                position: absolute;
+                top: 45%;
+                left: 3vw;
+                padding-top: 24px;
+                margin-left: -3vw;
+                margin-top: -20vh;
+                background: url('../../../assets/images/eventBg1.png');
+                background-size: 100% 100%;
+                .joinTitle{
+                    margin: 0.6vh 0;
+                    line-height: 3vh;
+                    color: #ffffff;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                .eventList{
+                    width: 12vw;
+                    height: 37vh;
+                    padding: 2.2vh 1vw 2.2vh 2vw;
+                    list-style: none;
+                    // overflow-y: scroll;
+                }
+                .eventLi{
+                    padding-left: 1.4vw;
+                    padding-bottom: 2vh;
+                    border-left: 1px solid #00ffff;
+                    color: #ffffff;
+                }
+                .eventTime{
+                    display: block;
+                    float: left;
+                    margin-top: -2px;
+                    margin-left: -2.6vw;
+                    width: 46px;
+                    height: 46px;
+                    border: 1px solid #00ffff;
+                    border-radius: 50%;
+                    background: #0072ff;
+                    .eventDay{
+                        display: inline-block;
+                        float: left;
+                        width: 100%;
+                        font-size: 10px;
+                        text-align: center;
+                        margin-top: 8px;
+                        font-style: normal !important;
+                        line-height: 14px;
+                    }
+                    .eventYear{
+                        display: inline-block;
+                        float: left;
+                        width:100%;
+                        font-size: 10px;
+                        text-align: center;
+                        line-height: 14px;
+                        font-style: normal !important;
+                    }
+                }
+                .eventTitle{
+                    margin: 0;
+                    font-size: 12px;
+                    border-bottom: 1px dashed #00ffff;
+                }
+                .eventContent{
+                    display: block;
+                    overflow: auto;
+                    max-height: 25vh;
+                    margin: 0;
+                    font-size: 12px;
+                    text-align: justify;
+                    text-justify: inter-ideograph;
+                }
+            }
+            .joinShowBtn{
+                display: inline-block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .v-mapdetailbox{
+            width: 100%;
+            height: 100%;
+        }
+        .v-incomedetailbox{
+            width: 99%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: url('../../../assets/images/detailChartsBG.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .incomedetailboxClose{
+            width: 2vw;
+            height: 3vh;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            border:none;
+            background:none;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .ifhideIncomeChart,.ifhideOutputcompaylist,.ifhideInputcompaylist,.ifhidejoincountrylist{
+            visibility: hidden;
+        }
+        .worldmap{
+            background: url("../../../assets/images/worldmap.png") no-repeat;
+            background-size: 86%;
+            background-position: 59% 51%;
+            width: 70vw;
+            margin-left: -2vw;
+        }
+        .worldmapcenter{
+            margin:auto !important;
+        }
+    }
+    .h-right-box{
+            display: flex;
+            padding: 0px;
+            height: 100%;
+            .v-databox{
+                height: 100%;
+                background: url("../../../assets/images/rightBox.png") no-repeat;
+                height: 100%;
+                background-size: 100% 100%; 
+                float: left;
+                width: 100%;
+                padding: 20px;
+                // overflow-y: scroll;
+                .barchart{
+                    float: left;
+                    width: 96%;
+                    height: 24vh;
+                    // border: 1px solid #ff0;
+                    margin: 1vh 0.5vw;
+                }
+            }        
+    }   
+    ul.btnlist {
+        position: absolute;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        z-index: 10;
+    } 
+    ul.btnlist li {
+        width: 9vw;
+        height: 3.7vh;
+        line-height: 3.7vh;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        border: 1px solid #00ffff;
+        border-radius: 8px;
+        cursor: pointer;
+        float: left;
+        margin-right: 16px;
+        background: rgba(0, 255, 255, 0.2);
+    }
+    ul.btnlist .lightBlue{
+        color: #00022c;
+        background: #00ffff;
+    }
+    .v-ldgendbox {
+        overflow: hidden;
+    }
+    .v-outputcompanylist,.v-inputcompanylist {
+        position: absolute;
+        right: 1vw;
+        bottom: 20vh; 
+        z-index: 10;
+        width:210px;
+    }
+    .v-outputcompanylist p-checkbox,.v-inputcompanylist p-checkbox{
+        float: left;
+        width: auto;
+        clear: both;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "黑体";
+    }
+    .lengderLine {
+        width: 37px;
+        height: 2px;
+        position: relative;
+        top: 10px;
+        left: 26px;
+    }
+    .v-ldgendbox span {
+        display: block;
+        width: 6px;
+        height: 4px;
+        border-radius: 4px;
+        position: relative;
+        left: 15px;
+        top: -1px;
+    }
+    .fixedlegend{
+        background: url('../../../assets/images/legend.png') no-repeat;
+        position: absolute;
+        width: 210px;
+        height: 100px;
+        bottom: 70px;
+        right: 1vh;
+    }
+    ul.v-joincountrylist {
+        color: #fff;
+        position: absolute;
+        bottom: 20vh;
+        right: 1vw;
+        list-style: none;
+        width: 210px;
+        margin: 0px;
+        padding: 0px;
+    }
+    ul.v-joincountrylist li {
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    ul.v-joincountrylist li span:first-child {
+        display: inline-block;
+        width: 40px;
+        margin: 0px 5px;
+        line-height: -8px;
+        position: relative;
+        top: -4px;
+    }
+    .v-incomedetailbox ul.btnlist{
+        top: 10vh;
+        li{
+            float: unset !important;
+            margin: 25px;
+        }
+    }
+   /deep/{
+       .ui-chkbox-box{
+            margin-right: 40px;
+            margin-top: -8px;
+        }     
+   }
+    
+}

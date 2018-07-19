@@ -1,0 +1,13 @@
+{
+    "series": [
+            { "value": 13.1, "name": "北京" },
+            { "value": 7.8, "name": "上海" },
+            { "value": 7.1, "name": "南京" },
+            { "value": 9.9, "name": "深圳" },
+            { "value": 6.1, "name": "杭州" },
+            { "value": 5.3, "name": "广州" },
+            { "value": 7.70, "name": "济南" },
+            { "value": 4.80, "name": "成都"},
+            { "value": 41.20, "name": "其他"}
+          ]
+}

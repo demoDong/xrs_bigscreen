@@ -1,0 +1,331 @@
+.skyBlue{
+    color: #00ffff;
+    font-family: Transistor
+}
+.number{
+    color: #00ffff;
+    font-family: Transistor;
+    font-size: 24px;
+}
+.text{
+    font-size: 18px;
+    color: #ffffff;
+}
+.unit{
+    font-size: 12px;
+    color: #ffffff;
+}
+.title{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 0.5vw;
+    font-family: sans-serif;
+}
+.pic2{
+    margin: 1.5vh;
+}
+.font{
+    font-weight: normal;
+    color: #fff;
+}
+
+.content{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 87.4vh;
+    .judgeTop{
+        margin: 1vh 0;
+        width: 100%;
+        height: 14vh;
+        // display: flex;
+        // border: 1px solid yellow;
+        .judgeBox:nth-of-type(1){
+            width: 20vw;
+        }
+        .judgeBox:nth-of-type(2),.judgeBox:nth-of-type(3),.judgeBox:nth-of-type(4),.judgeBox:nth-of-type(5){
+            width: 16.4vw;
+        }
+        .judgeBox{
+            float: left;
+            height: 100%;
+            margin: 0 1.28vw;
+        }
+        .describe{
+            // margin: 0 2vh;
+            padding: 0 3vh;
+            height: 100%;
+            border: 1px solid skyblue;
+            color: #ffffff;
+            .line{
+                margin: 0.5vh 0;
+                width: 100%;
+                float: left;
+                line-height: 3vh;
+                text-align: center;
+            }
+            .href-line{
+                margin: 0.5vh 0;
+                width: 50%;
+                float: left;
+                line-height: 3vh;
+                text-align: left;
+            }
+            .judgeTiele{
+                font-size: 22px;
+                // color: #ffffff;
+            }
+            .judgeNumber{
+                font-size: 28px;
+                color: #00ffff;
+                font-family: -webkit-pictograph;
+            }
+            .caseNumber{
+                margin: 0 0.2vw;
+                font-size: 28px;
+                color: orange;
+                font-family: -webkit-pictograph;
+            }
+            .judgeUnit{
+                font-size: 14px;
+            }
+            .judgeText{
+                font-size: 18px;
+            }
+        }
+    }
+    .judgeBottom{
+        margin: 0 auto;
+        width: 100%;
+        height: 66vh;
+        // border: 1px solid red;
+        .left{
+            height: 100%;
+            // border: 1px solid red;
+            background: url("../../../assets/images/rightBox.png") no-repeat;
+            background-size: 100% 100%;
+            .mapList{
+                float: left;
+                width: 96%;
+                height: 30%;
+                // border: 1px solid #ff0;
+                margin: 1vh 0.5vw;
+                .pic1{
+                    margin: 2vh 6vh 0 6vh;
+                    cursor: pointer;
+                }
+            }
+            .show{
+                float: left;
+                width: 96%;
+                height: 40%;
+                margin: 1vh 0.5vw;
+            }
+        }
+        .middle{
+            height: 100%;
+            position: relative;
+            /deep/ .ui-galleria-caption{
+                display: none!important;
+            }
+            /deep/ .ui-galleria-panel{
+                img{
+                    width: 100%;
+                }
+            }
+            ul.btnlist {
+                position: absolute;
+                list-style: none;
+                padding: 0px;
+                top:5%;
+                left:4%;
+                z-index: 10;
+            } 
+            ul.btnlist li {
+                width: 8vw;
+                height: 3.7vh;
+                line-height: 3.7vh;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #fff;
+                font-size: 22px;
+                border: 1px solid #00ffff;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-bottom: 16px;
+            }
+            ul.yearBtn{
+                position: absolute;
+                bottom: 0;
+                left:35%;
+                list-style: none;
+                padding: 0px;
+            }
+            ul.yearBtn li{
+               float: left;
+               margin-right: 2vh;
+               width: 8vw;
+               height: 3.7vh;
+               line-height: 3.7vh;
+               letter-spacing: 1px;
+               text-align: center;
+               color: #fff;
+               font-size: 22px;
+               border: 1px solid #00ffff;
+               border-radius: 8px;
+               cursor: pointer;
+            }
+            ul.btnlist .lightBlue{
+                color: #00022c;
+                background: #00ffff;
+            }
+            ul.yearBtn .lightBlue{
+                color: #00022c;
+                background: #00ffff;
+            }
+            .mapBack{
+                background: url("../../../assets/images/chinamap.png") no-repeat;
+                height: 100%;
+                background-size: 91% 88%;
+                background-position: 66% 55%;
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 100%;
+            }
+        }
+        .right{
+            height: 100%;
+            // overflow-y: scroll;
+            background: url("../../../assets/images/rightBox.png") no-repeat;
+            background-size: 100% 100%;
+            .mapList{
+                // position: relative;
+                float: left;
+                width: 96%;
+                height: 30%;
+                // border: 1px solid #ff0;
+                margin: 0 0.5vw;
+                .legend{
+                    position: absolute;
+                    right: 42px;
+                    top:42px;
+                }
+            }
+            .mapList1{
+                position: relative;
+                float: left;
+                width: 96%;
+                height: 70%;
+                // border: 1px solid #ff0;
+                margin: 0 0.5vw;
+                .title{
+                    color: #fff;
+                    text-align: center;
+                    font-size: 22px;
+                    margin-left: 0.5vw;
+                    margin-top: 0.5vw;
+                    font-family: sans-serif;
+                }   
+                .content{
+                    height: 20vh;
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 3vh;
+                    .sub_title{
+                        padding-bottom: 0.5vh;
+                        border-bottom: 1px dotted #fff;
+                    }
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        margin-top: 1vh;
+                        li{
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                           .num{
+                               margin-right: 1vh;
+                               color: #00ffff;
+                           }
+                        }  
+                    }
+                    .good_16{
+                        font-size: 22px;
+                        width: 45%;
+                        float: left;
+                        margin-top: 0.7vh;
+                        margin-left: 1.4vh;
+                        .num1{
+                            // text-align: right;
+                            // width: 20%;
+                            // display: block;
+                            float: right;
+                        }
+                        
+                        
+                    }
+                    
+                }
+                .content1{
+                    margin-top: 2vh;
+                    line-height: 5vh;
+                 }
+                .btn{
+                    position: absolute;
+                    bottom: 18px;
+                    left: 25%;
+                    width: 8vw;
+                    height: 3.7vh;
+                    line-height: 2vh;
+                    // letter-spacing: 1px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 20px;
+                    border: 1px solid #00ffff;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .cancel{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 17.5vh;
+            right: 2vh;
+            cursor: pointer;
+            background: url("../../../assets/images/clost_.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .left_detail{
+            height: 100%;
+            background: url("../../../assets/images/project_well.png") no-repeat;
+            float: left;
+            width: 20vw;
+            padding: 70px 0px 10px 10px;
+            margin: 0px 1vw;
+            background-size: 100% 100%;
+            div{
+                overflow-y: auto;
+                overflow-x: hidden;
+                height: 100%;
+                width: 99%;
+            }
+        }
+        .right_detail{
+            padding: 70px 0px 10px 10px;
+            width: 75.5vw;
+             height: 100%;
+            background: url("../../../assets/images/project_resove.png") no-repeat;
+            background-size: 100% 100%;
+            div{
+                height: 100%;
+                width: 99.7%;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        }
+
+    }
+}

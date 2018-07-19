@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm menu-group" *ngIf="ifshowmeun">
+            <p-menu #menu popup="popup" [model]="items"></p-menu>
+            <button type="button" pButton icon="fa fa-list" label="Show" (click)="menu.toggle($event)"></button>
+        </div>
+        <div class="col-sm">
+            <h1 class="text-center container-title">软件和信息技术服务业大数据平台</h1>
+        </div>
+        <div class="col-sm text-right" *ngIf="ifshowmeun">
+            <button class="text-center return" (click)="return()">返回</button>
+        </div>
+    </div>
+    <div class="menu-title">
+        <span>{{meunTitle}}</span>
+        <span style="visibility: hidden;">{{meunTitle}}</span>
+    </div>
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+</div>

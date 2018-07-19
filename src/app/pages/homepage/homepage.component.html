@@ -1,0 +1,103 @@
+<do-frame [(meunTitle)]="meunTitle">
+    <div class="container-fluid content">
+        <div class="row v-page-message">
+            <div [ngClass]="{'col-sm-9': !ifexpendbox,'col-sm-12': ifexpendbox}" class="h-left-box">
+                <div class="row v-datalistbox">
+                    <!-- 四项优势 -->
+                    <div class="col-sm-2" *ngFor="let item of incomeDetailArr; let i = index;">
+                        <div class="topBox" [ngClass]="{ligheheighBg: incomechartsshowheighArr[i]}">
+                            <button (click)="incomeDetailClicked($event, i, item.title)"></button>
+                            <h3 class="topTitle">{{item.title}}</h3>
+                            <div class="describe">
+                                <p class="line">
+                                    <span class="text">{{item.year}}年：</span>
+                                    <span class="number">{{item.income}}</span>
+                                    <span class="unit">
+                                        <span *ngIf="i<=1">亿元</span>
+                                        <span *ngIf="(i>1) &&((i!== 3) && (i !== 4))">亿美元</span>
+                                        <span *ngIf="i === 3">个</span>
+                                        <span *ngIf="i === 4">万人</span>
+                                    </span>
+                                </p>
+                                <p class="line">
+                                    <span class="text" *ngIf="i === 5">并购金额：</span>
+                                    <span class="text" *ngIf="i !== 5">同比增长：</span>
+                                    <span class="number">{{item.compare}}</span>
+                                    <span class="unit" *ngIf="i !== 5">%</span>
+                                    <span class="unit" *ngIf="i === 5">亿元</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v-mapbox">
+                    <div class="v-mapdetailbox" [ngClass]="{ifhideIncomeChart: !ifhideIncomeChart}">
+                        <ul class="btnlist">
+                            <li [ngClass]="{'lightBlue': btnshowheigharr[i]}" *ngFor="let item of buttondetailArr; let i = index;" (click)="buttondetailClick($event,item.id,i)">{{item.name}}</li>
+                        </ul>
+                        <do-echarts [options]="homepageWorldMapOption" [theme]="theme" [nameMap]="nameMap" class="worldmap" [ngClass]="{worldmapcenter: ifmarginauto}"
+                            (chartClick)="chinaAreaClicked($event)"></do-echarts>
+                        <div class="v-outputcompanylist" [ngClass]="{ifhideOutputcompaylist: ifhideOutputcompaylist}">
+                            <div *ngFor="let item of companyOutputArr" class="v-ldgendbox">
+                                <p-checkbox name="groupname" value="{{item}}" label="{{item}}" [(ngModel)]="selectedCompany" class='checkbox' (onChange)="selectedCompanyChange()">
+                                </p-checkbox>
+                                <div class="lengderLine">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="v-inputcompanylist" [ngClass]="{ifhideInputcompaylist: ifhideInputcompaylist}">
+                            <div *ngFor="let item of companyInputArr" class="v-ldgendbox">
+                                <p-checkbox name="groupname" value="{{item}}" label="{{item}}" [(ngModel)]="selectedCompany" class='checkbox' (onChange)="selectedCompanyChange()">
+                                </p-checkbox>
+                                <div class="lengderLine">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="v-joincountrylist" [ngClass]="{ifhidejoincountrylist: ifhidejoincountrylist}">
+                            <li *ngFor="let item of joinlinesArr" (click)="legendClicked($event, item.country, item.name)">
+                                <span></span>
+                                <span>{{item.name}}合作路线</span>
+                            </li>
+                        </ul>
+                        <div class="joinShow" *ngIf="joinShow">
+                            <span class="joinShowBtn" (click)="closeJoinshow()"></span>
+                            <h3 class="joinTitle">{{joinShowData.length > 0 ? joinShowData[0].countrys : ""}}合作大事记</h3>
+                            <ul class="eventList">
+                                <li class="eventLi" *ngFor="let item of joinShowData">
+                                    <span class="eventTime">
+                                        <em class="eventDay">{{item["day"]}}</em>
+                                        <i class="eventYear">{{item["year"]}}</i>
+                                    </span>
+                                    <p class="eventTitle">{{item["title"]}}</p>
+                                    <p class="eventContent">{{item["content"]}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="fixedlegend">
+                        </ul>
+                    </div>
+                    <div class="v-incomedetailbox" [ngClass]="{ifhideIncomeChart: ifhideIncomeChart}">
+                        <button class="incomedetailboxClose" (click)="incomechartsclose()"></button>
+                        <ul class="btnlist">
+                            <li [ngClass]="{'lightBlue': incomebtnshowheigharr[i]}" *ngFor="let item of incomeDetailBtnArr; let i = index;">{{item.name}}</li>
+                        </ul>
+                        <!-- <ul class="btnlist btn-position" *ngIf="btnShow">
+                            <li *ngFor="let item of btnName; let i = index;">{{item}}</li>
+                        </ul> -->
+                        <do-echarts class="barchart" [options]="homepageIncomeDetailBarOption"></do-echarts>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 h-right-box" *ngIf="!ifexpendbox">
+                <div class="v-databox">
+                    <do-echarts class="barchart" [options]="homepageWorldSoftwareDevBarOption"></do-echarts>
+                    <do-echarts class="barchart" [options]="homepageDomesticSoftwareDevBarOption"></do-echarts>
+                    <do-echarts class="barchart" [options]="homepageJqzsOption"></do-echarts>
+                </div>
+            </div>
+        </div>
+        <button class="v-expendarrow" [ngClass]="{arrowRotate: ifarrowRotate}" (click)="extendBox()"></button>
+    </div>
+</do-frame>

@@ -1,0 +1,463 @@
+{
+  "mapscatterData": [
+    {"lon": 116.28, "lat": 39.54, "year": "2016","name": "北京", "shenbao_value": 46, "shenbao_pre": 10,"good_value":"", "good_pre": ""},
+    {"lon": 116.28, "lat": 39.54, "year": "2017","name": "北京", "shenbao_value": 128, "shenbao_pre": 11,"good_value": 34, "good_pre":34},  
+    {"lon" : 117.21, "lat" : 39.14, "year" : "2016","name" :"天津市", "shenbao_value": 10, "shenbao_pre": 2,"good_value":"", "good_pre": ""} ,
+    {"lon" : 117.21, "lat" : 39.14, "year" : "2017","name" :"天津市", "shenbao_value": 15, "shenbao_pre": 1,"good_value":"", "good_pre":""} ,
+    {"lon" : 121.49, "lat" : 31.25, "year" : "2016","name" :"上海市", "shenbao_value": 20, "shenbao_pre": 4, "good_value":"", "good_pre":""} ,
+    {"lon" : 121.49, "lat" : 31.25, "year" : "2017","name" :"上海市", "shenbao_value": 45, "shenbao_pre": 4,"good_value":5, "good_pre":5} ,
+    {"lon" : 120.22, "lat" : 30.26, "year" : "2016","name" :"浙江", "shenbao_value": 44, "shenbao_pre": 10, "good_value":"", "good_pre":""} ,
+    {"lon" : 120.22, "lat" : 30.26, "year" : "2017","name" :"浙江", "shenbao_value": 74, "shenbao_pre": 6,"good_value":9, "good_pre":9} ,
+    {"lon" : 113.31, "lat" : 23.12, "year" : "2016","name" :"广东", "shenbao_value": 12, "shenbao_pre": 3,"good_value":"", "good_pre":""} ,
+    {"lon" : 113.31, "lat" : 23.12, "year" : "2017","name" :"广东", "shenbao_value": 140, "shenbao_pre": 12,"good_value":12, "good_pre":12} ,
+    {"lon" : 121.62, "lat" : 38.92, "year" : "2016","name" :"大连", "shenbao_value": 13, "shenbao_pre": 3,"good_value":"", "good_pre":""} ,
+    {"lon" : 121.62, "lat" : 38.92, "year" : "2017","name" :"大连", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 119.33, "lat" : 26.05, "year" : "2016","name" :"福建", "shenbao_value": 15, "shenbao_pre": 3,"good_value":"", "good_pre":""} ,
+    {"lon" : 119.33, "lat" : 26.05, "year" : "2017","name" :"福建", "shenbao_value": 52, "shenbao_pre": 4,"good_value":3, "good_pre":3} ,
+    {"lon" : 117.024, "lat" : 36.682, "year" : "2016","name" :"山东", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 117.024, "lat" : 36.682, "year" : "2017","name" :"山东", "shenbao_value": 52, "shenbao_pre": "","good_value":6, "good_pre":6} ,
+    {"lon" : 103.82, "lat" : 36.06, "year" : "2016","name" :"甘肃", "shenbao_value": 13,"shenbao_pre": 3, "good_value":"", "good_pre":""} ,
+    {"lon" : 103.82, "lat" : 36.06, "year" : "2017","name" :"甘肃", "shenbao_value": 14, "shenbao_pre": 1,"good_value":1, "good_pre":1} ,
+    {"lon" : 108.30, "lat" : 22.81, "year" : "2016","name" :"广西", "shenbao_value": 2, "shenbao_pre": 0.4,"good_value":0, "good_pre":0} ,
+    {"lon" : 108.30, "lat" : 22.81, "year" : "2017","name" :"广西", "shenbao_value": 5, "shenbao_pre": 0.4,"good_value":0, "good_pre":0} ,
+    {"lon" : 106.71, "lat" : 26.63, "year" : "2016","name" :"贵州", "shenbao_value": 18, "shenbao_pre": 4,"good_value":"", "good_pre":""} ,
+    {"lon" : 106.71, "lat" : 26.63, "year" : "2017","name" :"贵州", "shenbao_value": 63, "shenbao_pre": 5,"good_value":3, "good_pre":3} ,
+    {"lon" : 110.33, "lat" : 20.02, "year" : "2016","name" :"海南", "shenbao_value": 2,"shenbao_pre": 0.4, "good_value":"", "good_pre":""} ,
+    {"lon" : 110.33, "lat" : 20.02, "year" : "2017","name" :"海南", "shenbao_value": 1, "shenbao_pre": 0.08,"good_value":"", "good_pre":""} ,
+    {"lon" : 114.52, "lat" : 38.05, "year" : "2016","name" :"河北", "shenbao_value": 9, "shenbao_pre": 2,"good_value":0, "good_pre":0} ,
+    {"lon" : 114.52, "lat" : 38.05, "year" : "2017","name" :"河北", "shenbao_value": 29, "shenbao_pre": 2,"good_value":2, "good_pre":2} ,
+    {"lon" : 113.65, "lat" : 34.76, "year" : "2016","name" :"河南", "shenbao_value": 17, "shenbao_pre": 4,"good_value":0, "good_pre":0} ,
+    {"lon" : 113.65, "lat" : 34.76, "year" : "2017","name" :"河南", "shenbao_value": 30, "shenbao_pre": 3,"good_value":1, "good_pre":1} ,
+    {"lon" : 102.714601, "lat" : 25.049153, "year" : "2016","name" :"云南", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 102.714601, "lat" : 25.049153, "year" : "2017","name" :"云南", "shenbao_value": 31, "shenbao_pre": 3,"good_value":1, "good_pre":1} ,
+    {"lon" : 126.66, "lat" : 45.77, "year" : "2016","name" :"黑龙江", "shenbao_value": 10, "shenbao_pre": 2,"good_value":"", "good_pre":""} ,
+    {"lon" : 126.66, "lat" : 45.77, "year" : "2017","name" :"黑龙江", "shenbao_value": 16, "shenbao_pre": 1,"good_value":2, "good_pre":2} ,
+    {"lon" : 112.98, "lat" : 28.21, "year" : "2016","name" :"湖南", "shenbao_value": 2, "shenbao_pre": 0.4,"good_value":"", "good_pre":""} ,
+    {"lon" : 112.98, "lat" : 28.21, "year" : "2017","name" :"湖南", "shenbao_value": 22, "shenbao_pre": 2,"good_value":3, "good_pre":3} ,
+    {"lon" : 125.31, "lat" : 43.90, "year" : "2016","name" :"吉林", "shenbao_value": 5, "shenbao_pre": 1,"good_value":"", "good_pre":""} ,
+    {"lon" : 125.31, "lat" : 43.90, "year" : "2017","name" :"吉林", "shenbao_value": 10, "shenbao_pre": 0.8,"good_value":0, "good_pre":0} ,
+    {"lon" : 118.78, "lat" : 32.06, "year" : "2016","name" :"江苏", "shenbao_value": 9, "shenbao_pre": 2,"good_value":"", "good_pre":""} ,
+    {"lon" : 118.78, "lat" : 32.06, "year" : "2017","name" :"江苏", "shenbao_value": 44, "shenbao_pre": 4,"good_value":4, "good_pre":4} ,
+    {"lon" : 112.55, "lat" : 37.89, "year" : "2016","name" :"山西", "shenbao_value": 7, "shenbao_pre": 2,"good_value":"", "good_pre":""} ,
+    {"lon" : 112.55, "lat" : 37.89, "year" : "2017","name" :"山西", "shenbao_value": 35, "shenbao_pre": 3,"good_value":0, "good_pre":0} ,
+    {"lon" : 114.3162, "lat" : 30.581084, "year" : "2016","name" :"湖北", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 114.3162, "lat" : 30.581084, "year" : "2017","name" :"湖北", "shenbao_value": 38, "shenbao_pre": 3,"good_value":3, "good_pre":3} ,
+    {"lon" : 108.95, "lat" : 34.28, "year" : "2016","name" :"陕西", "shenbao_value": 46, "shenbao_pre": 10,"good_value":"", "good_pre":""} ,
+    {"lon" : 108.95, "lat" : 34.28, "year" : "2017","name" :"陕西", "shenbao_value": 22, "shenbao_pre": 2,"good_value":2, "good_pre":2} ,
+    {"lon" : 114.03, "lat" : 22.32, "year" : "2016","name" :"深圳", "shenbao_value": 2, "shenbao_pre": 0.4,"good_value":"", "good_pre":""} ,
+    {"lon" : 114.03, "lat" : 22.32, "year" : "2017","name" :"深圳", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 104.07, "lat" : 30.68, "year" : "2016","name" :"四川", "shenbao_value": 15, "shenbao_pre": 3,"good_value":"", "good_pre":""} ,
+    {"lon" : 104.07, "lat" : 30.68, "year" : "2017","name" :"四川", "shenbao_value": 18, "shenbao_pre": 2,"good_value":1, "good_pre":1} ,
+    {"lon" : 114.32, "lat" : 30.58, "year" : "2016","name" :"湖北", "shenbao_value": 1, "shenbao_pre": 0.2,"good_value":"", "good_pre":""} ,
+    {"lon" : 114.32, "lat" : 30.58, "year" : "2017","name" :"湖北", "shenbao_value": 38, "shenbao_pre": 3,"good_value":3, "good_pre":3} ,
+    {"lon" : 106.53, "lat" : 29.54, "year" : "2016","name" :"重庆", "shenbao_value": 10, "shenbao_pre": 2,"good_value":"", "good_pre":""} ,
+    {"lon" : 106.53, "lat" : 29.54, "year" : "2017","name" :"重庆", "shenbao_value": 28, "shenbao_pre": 2,"good_value":2, "good_pre":2} ,
+    {"lon" : 117.28, "lat" : 31.87, "year" : "2016","name" :"安徽", "shenbao_value": 21, "shenbao_pre": 5,"good_value":"", "good_pre":""} ,
+    {"lon" : 117.28, "lat" : 31.87, "year" : "2017","name" :"安徽", "shenbao_value": 26, "shenbao_pre": 2,"good_value":3, "good_pre":3} ,
+    {"lon" : 87.56, "lat" : 43.84, "year" : "2016","name" :"新疆", "shenbao_value": 3, "shenbao_pre": 0.6,"good_value":"", "good_pre":""} ,
+    {"lon" : 87.56, "lat" : 43.84, "year" : "2017","name" :"新疆", "shenbao_value": 11, "shenbao_pre": 0.9,"good_value":0, "good_pre":0} ,
+    {"lon" : 111.66, "lat" : 40.83, "year" : "2016","name" :"内蒙古", "shenbao_value": 46, "shenbao_pre": 10,"good_value":"", "good_pre":""} ,
+    {"lon" : 111.66, "lat" : 40.83, "year" : "2017","name" :"内蒙古", "shenbao_value": 30, "shenbao_pre": 3,"good_value":1, "good_pre":1} ,
+    {"lon" : 115.893528, "lat" : 28.689, "year" : "2016","name" :"江西", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 115.893528, "lat" : 28.689, "year" : "2017","name" :"江西", "shenbao_value": 27, "shenbao_pre": 2,"good_value":1, "good_pre":1} ,
+    {"lon" : 123.43279, "lat" : 41.808, "year" : "2016","name" :"辽宁", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 123.43279, "lat" : 41.808, "year" : "2017","name" :"辽宁", "shenbao_value": 27, "shenbao_pre": 2,"good_value":1, "good_pre":1} ,
+    {"lon" : 106.206479, "lat" : 38.502621, "year" : "2016","name" :"宁夏", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 106.206479, "lat" : 38.502621, "year" : "2017","name" :"宁夏", "shenbao_value": 19, "shenbao_pre": 2,"good_value":0, "good_pre":0} ,
+    {"lon" : 101.767921, "lat" : 36.6407, "year" : "2016","name" :"青海", "shenbao_value": "", "shenbao_pre": "","good_value":"", "good_pre":""} ,
+    {"lon" : 101.767921, "lat" : 36.6407, "year" : "2017","name" :"青海", "shenbao_value": 5, "shenbao_pre": 0.4,"good_value":0, "good_pre":0}
+  ],
+  "topFirstData": [
+    {
+      "tatalNum": 451,
+      "provinceNum": 409,
+      "planNum": "32",
+      "centernNum": "28",
+      "companyNum": "",
+      "year": "2016"
+    },
+    {
+      "tatalNum": 1192,
+      "provinceNum": 30,
+      "planNum": "5",
+      "centernNum": "32",
+      "companyNum": 843,
+      "year": "2017"
+    }
+  ],
+  "topDetailData": [
+    {
+      "name": "有效案例",
+      "tatalNum": 409,
+      "produceNum": 268,
+      "solutionNum":141 ,
+      "year": "2016"
+    },
+    {
+      "name": "有效案例",
+      "tatalNum": 1055,
+      "produceNum": 475,
+      "solutionNum": 580,
+      "year": "2017"
+    },
+    {
+      "name": "初期入围",
+      "tatalNum": 103,
+      "produceNum": 298,
+      "solutionNum": 153,
+      "year": "2016"
+    },
+    {
+      "name": "初期入围",
+      "tatalNum": 347,
+      "produceNum": 52,
+      "solutionNum": 195,
+      "year": "2017"
+    },
+    {
+      "name": "中期入围",
+      "tatalNum": 103,
+      "produceNum":"" ,
+      "solutionNum": "",
+      "year": "2016"
+    },
+    {
+      "name": "中期入围",
+      "tatalNum": 156,
+      "produceNum": 50,
+      "solutionNum": 106,
+      "year": "2017"
+    },
+    {
+      "name": "优秀案例",
+      "tatalNum": 50,
+      "produceNum": 19,
+      "solutionNum": 31,
+      "year": "2016"
+    },
+    {
+      "name": "优秀案例",
+      "tatalNum": 100,
+      "produceNum": 30,
+      "solutionNum": 70,
+      "year": "2017"
+    }
+  ],
+  "ProvinceTop10Data": [
+    {
+      "data": [
+        "北京",
+        "浙江",
+        "安徽",
+        "上海",
+        "贵州",
+        "河南",
+        "辽宁",
+        "四川",
+        "福建",
+        "厦门"
+      ],
+      "value": [
+        46,
+        44,
+        21,
+        20,
+        18,
+        17,
+        17,
+        15,
+        15,
+        14
+      ],
+      "year": "2016"
+    },
+    {
+      "data": [
+        "广东",
+        "北京",
+        "浙江",
+        "贵州",
+        "山东",
+        "上海",
+        "江苏",
+        "湖北",
+        "山西",
+        "云南"
+      ],
+      "value": [
+        140,
+        128,
+        74,
+        63,
+        52,
+        52,
+        45,
+        44,
+        38,
+        35
+      ],
+      "year": "2017"
+    }
+  ],
+  "recommendData": [
+    {
+      "data": [
+        "各地方主管部门",
+        "计划单列市",
+        "央企集团",
+        "企业自主申报"
+      ],
+      "value": [
+        603,
+        77,
+        72,
+        440
+      ],
+      "year": "2016"
+    },
+    {
+      "data": [
+        "各地方主管部门",
+        "计划单列市",
+        "央企集团",
+        "企业自主申报"
+      ],
+      "value": [
+        103,
+        67,
+        62,
+        240
+      ],
+      "year": "2017"
+    }
+  ],
+  "percentData": [
+    {
+      "name": "民营企业",
+      "value": 69,
+      "year": "2017"
+    },
+    {
+      "name": "国有企业",
+      "value": 15,
+      "year": "2017"
+    },
+    {
+      "name": "国有控股企业",
+      "value": 6,
+      "year": "2017"
+    },
+    {
+      "name": "国有参股企业",
+      "value": 2,
+      "year": "2017"
+    },
+    {
+      "name": "事业单位",
+      "value": 2,
+      "year": "2017"
+    },
+    {
+      "name": "合资企业",
+      "value": 2,
+      "year": "2017"
+    },
+    {
+      "name": "其他",
+      "value": 2,
+      "year": "2017"
+    },
+    {
+      "name": "政府机关",
+      "value": 1,
+      "year": "2017"
+    },
+    {
+      "name": "外资企业",
+      "value": 1,
+      "year": "2017"
+    }
+  ],
+  "rightTopData": [
+    {
+      "value": 30,
+      "typeName": "大数据产品",
+      "children": [
+        {
+          "value": 10,
+          "chilName": "数据综合类"
+        },
+        {
+          "value": 8,
+          "chilName": "数据分析挖掘"
+        },
+        {
+          "value": 7,
+          "chilName": "数据管理"
+        },
+        {
+          "value": 5,
+          "chilName": "安全类"
+        }
+      ],
+      "year": "2017"
+    },
+    {
+      "value": 70,
+      "typeName": "大数据应用解决方案",
+      "children": [
+        {
+          "value": 14,
+          "chilName": "工业领域"
+        },
+        {
+          "value": 14,
+          "chilName": "交通物流"
+        },
+        {
+          "value": 13,
+          "chilName": "政府服务"
+        },
+        {
+          "value": 7,
+          "chilName": "政府医疗健康服务"
+        },
+        {
+          "value": 6,
+          "chilName": "金融财税"
+        },
+        {
+          "value": 5,
+          "chilName": "能源电力"
+        },
+        {
+          "value": 3,
+          "chilName": "商贸服务"
+        },
+        {
+          "value": 3,
+          "chilName": "资源环保"
+        },
+        {
+          "value": 2,
+          "chilName": "科教文体"
+        },
+        {
+          "value": 2,
+          "chilName": "农林畜牧"
+        },
+        {
+          "value": 2,
+          "chilName": "旅游服务"
+        }
+      ],
+      "year": "2017"
+    }
+  ],
+  "projectbigdataProducts": {
+    "2016": {
+      "value": [],
+      "num": 0
+    },
+    "2017": {
+      "value": [
+        "网易猛犸大数据平台",
+        "KMX工业大数据管理分析平台",
+        "阿里云数加平台",
+        "讯飞大数据AI营销平台",
+        "H3C DataEngine V1.0"
+      ],
+      "num": 30
+    }
+  },
+  "projectbigdataSolutions": {
+    "2016": {
+      "value": [],
+      "num": 0
+    },
+    "2017": {
+      "value": [
+        "联想工业大数据解决方案",
+        "区域级工业创新服务平台应用集成解决方案",
+        "工程机械行业智能装备、智能服务及智能管理",
+        "基于大数据技术的高速动车组健康诊断及专家支持(PHM)系统",
+        "基于大规模个性化定制的轮胎全生命周期大数据应用方案"
+      ],
+      "num": 70
+    }
+  },
+  "good": [
+    {
+      "name": "综合类",
+      "value": 8
+   },
+   {
+    "name": "工业",
+    "value": 8
+   },
+   {
+    "name": "数据挖掘",
+    "value": 4
+   },
+   {
+    "name": "能源电力",
+    "value": 4
+   },
+   {
+    "name": "数据存储",
+    "value": 3
+   },
+   {
+    "name": "商贸服务",
+    "value": 3
+   },
+   {
+    "name": "政府服务",
+    "value": 2
+   },
+   {
+    "name": "财税金融",
+    "value": 2
+   },
+   {
+    "name": "资源环保",
+    "value": 2
+   },
+   {
+    "name": "交通运输",
+    "value": 2
+   },
+   {
+    "name": "医疗健康",
+    "value": 2
+   },
+   {
+    "name": "旅游服务",
+    "value": 2
+   },
+   {
+    "name": "数据采集",
+    "value": 1
+   },
+   {
+    "name": "数据清洗",
+    "value": 1
+   },
+   {
+    "name": "数据管理",
+    "value": 1
+   },
+   {
+    "name": "数据安全",
+    "value": 1
+   },
+   {
+    "name": "农林畜牧",
+    "value": 1
+   },
+   {
+    "name": "科教文体",
+    "value": 1
+   }
+  ]
+}

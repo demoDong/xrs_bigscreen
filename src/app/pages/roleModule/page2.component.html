@@ -1,0 +1,130 @@
+<do-frame [(meunTitle)]="meunTitle">
+    <div class="container-fluid row content">
+        <div class="judgeTop">
+            <div class="judgeBox" *ngFor="let item of topFirstList">
+                <div class="describe">
+                    <p class="line">
+                        <span class="judgeTiele">征集案例</span>
+                        <span class="caseNumber">{{item.tatalNum}}</span>
+                        <span class="judgeUnit">个</span>
+                    </p>
+                    <p class="href-line">
+                        <span class="judgeNumber">{{item.provinceNum}}</span>
+                        <span class="judgeUnit">个省级部门</span>
+                    </p>
+                    <p class="href-line">
+                        <span class="judgeNumber">{{item.planNum}}</span>
+                        <span class="judgeUnit">个计划单位市</span>
+                    </p>
+                    <p class="href-line">
+                        <span class="judgeNumber">{{item.centernNum}}</span>
+                        <span class="judgeUnit">家中央单位</span>
+                    </p>
+                    <p class="href-line">
+                        <span class="judgeNumber">{{item.companyNum}}</span>
+                        <span class="judgeUnit">家企业</span>
+                    </p>
+                </div>
+            </div>
+            <div class="judgeBox" *ngFor="let item of topList">
+                <div class="describe">
+                    <p class="line">
+                        <span class="judgeTiele">{{item.name}}</span>
+                        <span class="caseNumber">{{item.tatalNum}}</span>
+                        <span class="judgeUnit">个</span>
+                    </p>
+                    <p class="line">
+                        <span class="judgeText">产品：</span>
+                        <span class="judgeNumber">{{item.produceNum}}</span>
+                        <span class="judgeUnit">个</span>
+                    </p>
+                    <p class="line">
+                        <span class="judgeText">应用解决方案：</span>
+                        <span class="judgeNumber">{{item.solutionNum}}</span>
+                        <span class="judgeUnit">个</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row judgeBottom" *ngIf="!ifshowdetail">
+            <div class="col-sm-3">
+                <div class="left">
+                    <div class="mapList" [ngClass]="{'show': !isShowImg}">
+                        <do-echarts [options]="echartsProvinceTop10Option" [theme]="theme"></do-echarts>
+                    </div>
+                    <div class="mapList" [ngClass]="{'show': !isShowImg}">
+                        <do-echarts [options]="leftTopMapOption" [theme]="theme"></do-echarts>
+                    </div>
+                    <div class="mapList" *ngIf="isShowImg">
+                        <!-- <div class="title">申报案例各类企业性质占比</div> -->
+                        <do-echarts [options]="leftBottomMapOption" [theme]="theme"></do-echarts>
+                        <!-- <img class="pic1" *ngIf="isShowImg" src="./assets/images/qiyezhanbi.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="middle">
+                    <ul class="btnlist">
+                        <li [ngClass]="{'lightBlue': btnshowheigharr[i]}" *ngFor="let item of buttondetailArr; let i = index;" (click)="buttondetailClick($event,i, item.type, item.name)">{{item.name}}</li>
+                    </ul>
+                    <div class="mapBack"></div>
+                    <do-echarts [options]="middleOption" [theme]="theme" [nameMap]="nameMap"></do-echarts>
+                    <ul class="yearBtn">
+                        <li [ngClass]="{'lightBlue': yearbtnshowheigharr[i]}" *ngFor="let item of buttonYearArr; let i = index;" (click)="buttonYearClick($event,i, item)">{{item}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="right">
+                    <div class="mapList" *ngIf="isShowImg">
+                        <do-echarts [options]="rightListOption1" [theme]="theme"></do-echarts>
+                        <div class="legend" *ngIf="isShowImg"><img src="./assets/images/page4_legend.png" alt=""></div>
+                    </div>
+                    <div class="mapList1"  *ngIf="!isShowImg">
+                        <div class="title">50家入选案例领域分布情况</div>
+                        <div class="content content1">
+                            <ul>
+                                <li *ngFor="let item of list3;let i = index;" class="good_16">
+                                    {{item.name}}<span class="num num1">{{item.value}}个</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mapList1" *ngIf="isShowImg">
+                        <div class="title">优秀案例</div>
+                        <div class="content">
+                            <div class="sub_title">大数据产品类（
+                                <span>{{list1_num}}个</span>）</div>
+                            <ul>
+                                <li *ngFor="let item of list1;let i = index;">
+                                    <span class="num">0{{i+1}}</span>{{item}}</li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <div class="sub_title">大数据应用解决方案类（
+                                <span>{{list2_num}}个</span>）</div>
+                            <ul>
+                                <li *ngFor="let item of list2;let i = index;">
+                                    <span class="num">0{{i+1}}</span>{{item}}</li>
+                            </ul>
+                        </div>
+                        <div class="btn" (click)="open()">查看详细数据</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="ifshowdetail" class="row judgeBottom">
+            <div class="cancel" (click)="cancel()"></div>
+            <div class="left_detail">
+                <div>
+                    <img src="./assets/images/project_detail_2017.png" alt="">
+                </div>
+            </div>
+            <div class="right_detail">
+                <div>
+                    <img src="./assets/images/project_list_2017.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</do-frame>

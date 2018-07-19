@@ -1,0 +1,144 @@
+.content {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: url("../../../assets/images/opnion_3.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.left-div {
+  height: 33vh !important;
+  width: 25% !important;
+  margin-top: 10% !important;
+  display: flex;
+}
+
+.middle-div {
+  height: 100vh !important;
+  width: 50% !important;
+  display: flex;
+  padding-top: 10%;
+}
+
+.right-div {
+  height: 100vh !important;
+  width: 25% !important;
+  display: flex; // padding-top: 10%;
+}
+
+.massige-div {
+  height: 20vh !important;
+  width: 100% !important;
+}
+
+ul.v-joincountrylist {
+  color: #fff;
+  position: absolute;
+  bottom: 20vh;
+  right: 1vw;
+  list-style: none;
+  width: 210px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.v-joincountrylist li {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+ul.v-joincountrylist li span:first-child {
+  display: inline-block;
+  width: 40px;
+  margin: 0px 5px;
+  line-height: -8px;
+  position: relative;
+  top: -4px;
+}
+
+.eventList {
+  width: 80vw;
+  height: 100vh;
+  padding: 2.2vh 4vw 0.2vh 5vw;
+  list-style: none;
+  overflow: auto; // overflow-y: scroll;
+}
+
+.eventLi {
+  padding-left: 1.4vw;
+  padding-bottom: 2vh;
+  border-left: 1px solid #00ffff;
+  color: #ffffff;
+}
+
+.eventTime {
+  display: block;
+  float: left;
+  margin-top: -2px;
+  margin-left: -2.6vw;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #00ffff;
+  border-radius: 50%;
+  background: #0072ff;
+  .eventDay {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+    font-style: normal !important;
+    line-height: 14px;
+  }
+  .eventYear {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
+    font-style: normal !important;
+  }
+}
+
+.eventTitle {
+  margin: 0;
+  font-size: 12px;
+  border-top: 1px dashed #00ffff;
+}
+
+.eventContent {
+  margin: 0;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+ul.eventList {
+  margin-top: 33%;
+  height: 78vh !important;
+  width: 23.2vw !important;
+}
+
+.joinTitle {
+  margin: 0.6vh 0;
+  line-height: 3vh;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.ifhideIncomeChart {
+    background: url("../../../assets/images/opnion_2.jpg") no-repeat;
+    position: relative;
+    z-index: 90;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+}

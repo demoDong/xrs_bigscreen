@@ -1,0 +1,24 @@
+<do-frame [(meunTitle)]="meunTitle">
+  <div class="container-fluid row content" [ngClass]="{ifhideIncomeChart: ifhideIncomeChart}">
+    <div class="left-div" (click)="changeBgimg()">
+    </div>
+    <div class="middle-div" *ngIf="ifclickedChart">
+      <iframe style="height: 80vh!;width:100%" src="./assets/html5-canvas-3d-text-ball/index.html" frameborder="0"></iframe>
+    </div>
+    <div class="right-div">
+      <ul class="eventList" *ngIf="ifclickedChart">
+        <h3 class="joinTitle">重要资讯</h3>
+        <li class="eventLi" value="{{item}}" *ngFor="let item of joinShowData">
+          <span class="eventTime">
+            <em class="eventDay">{{item["day"]}}</em>
+            <i class="eventYear">{{item["year"]}}</i>
+          </span>
+          <p class="eventContent">{{item["content"]}}</p>
+          <p class="eventTitle">{{item["title"]}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+</do-frame>

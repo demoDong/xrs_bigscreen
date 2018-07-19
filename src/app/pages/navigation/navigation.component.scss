@@ -1,0 +1,100 @@
+.btnlist{
+    width: 98vw;
+    height:84vh;
+    text-align:center;
+    position:relative;
+    button{
+            position: absolute;
+            margin: auto;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: -3.5vw !important;
+        div{
+            width: 20vw;
+            height: 40vh;
+            background:url('../../../assets/images/nav_fault.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        div:hover{
+            background:url('../../../assets/images/nav_secect.png') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    button:hover{
+        color:#f39800;
+    }
+    // button:nth-child(1)
+    button:nth-child(1){
+        position: absolute;
+        margin: auto;
+        left: 10vw;
+        bottom: 25vh;
+        .nav_label{
+            line-height: 40vh;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        // bottom: 5vh;
+        // margin-left: -10vw !important;
+        // div{
+        //     // width: 20vw;
+        //     // height: 24vh;
+        //     width: 20vw;
+        //     height: 24vh;
+        //     background:url('../../../assets/images/button2.png') no-repeat;
+        //     background-size: 100% 100%;
+        // }
+        //  div:hover{
+        //     background:url('../../../assets/images/button2_.png') no-repeat;
+        //     background-size: 100% 100%;
+        // }
+    }
+    button:nth-child(2){
+        position: absolute;
+        margin: auto;
+        left: 32vw;
+        bottom: 25vh;
+        .nav_label{
+            line-height: 40vh;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    button:nth-child(3){
+        bottom: 25vh;
+        left: 54vw;
+        position: absolute;
+        margin: auto;
+        .nav_label{
+            line-height: 40vh;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    button:nth-child(4){
+        bottom: 25vh;
+        left: 76vw;
+        position: absolute;
+        margin: auto;
+        .nav_label{
+            line-height: 40vh;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    // button:nth-child(5){
+    //     position: absolute;
+    //     margin: auto;
+    //     bottom: 25vh;
+    // right: 31vw;
+    // }
+    // button:nth-child(6){
+    //     position: absolute;
+    //     margin: auto;
+    //         right: 18vw;
+    // bottom: 10vh;
+    // }
+}
